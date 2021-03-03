@@ -5,9 +5,16 @@ a = '9'
 b = '5'
 c = '8'
 
-if n.find(a) != -1 and n.find(b) != -1 and n.find(c) != -1:
-    print('You win!')
+if n.isdigit():
+    if n.find(a) != -1 and n.find(b) != -1 and n.find(c) != -1:
+        print('You win!')
+    else:
+        print('Sorry.')
 else:
-    print('Sorry.')
+    print('Not a valid number.')
+
+
+
+
 
 
