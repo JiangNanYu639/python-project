@@ -5,7 +5,7 @@
 # 0-59   'D'
 
 grade = input('pls input your grade: ')
-grade = int(grade)
+grade = float(grade)
 
 if (grade > 84 and grade <= 100):
     print('You got an A.')
@@ -13,5 +13,7 @@ elif (grade > 74 and grade <= 84):
     print('You got a B.')
 elif (grade > 59 and grade <= 74):
     print('You got a C.')
-else:
+elif (grade >= 0 and grade <= 59):
     print('You got a D.')
+else:
+    print('Not a valid grade.')
