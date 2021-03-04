@@ -5,7 +5,9 @@ a = '9'
 b = '5'
 c = '8'
 
-if n.isdigit():
+length = len(n)
+
+if n.isdigit() and length == 6:
     if n.find(a) != -1 and n.find(b) != -1 and n.find(c) != -1:
         print('You win!')
     else:
